@@ -1,0 +1,89 @@
+[
+  {
+    "name": "CustomerInfo",
+    "group": "Customers",
+    "stack": "DSL",
+    "version": "1.0.0",
+    "endpoints": ["/api/customers/info", "/api/customers/details"],
+    "isActive": true,
+    "configData": {
+      "settings": {
+        "timeout": 30000,
+        "retry": 3
+      }
+    }
+  },
+  {
+    "name": "AgentSessionTrack",
+    "group": "Agentsessions",
+    "stack": "MOBILE",
+    "version": "2.1.0",
+    "endpoints": ["/api/agentsessions/start", "/api/agentsessions/end"],
+    "isActive": true,
+    "configData": null
+  },
+  {
+    "name": "AdminUser",
+    "group": "Admin",
+    "stack": "SOLSTICE",
+    "version": "1.0.1",
+    "endpoints": ["/api/admin/users"],
+    "isActive": false
+  },
+  {
+    "name": "MemoNotes",
+    "group": "Memos",
+    "stack": "CABLE",
+    "version": "3.0.0",
+    "endpoints": ["/api/memos/list"],
+    "isActive": true,
+    "configData": {
+      "settings": {
+        "timeout": 45000
+      }
+    }
+  },
+  {
+    "name": "DocumentArchive",
+    "group": "Documents",
+    "stack": "DSL",
+    "version": "1.2.0",
+    "endpoints": ["/api/documents/archive"],
+    "isActive": true
+  },
+  {
+    "name": "DisruptionMonitor",
+    "group": "Disruptions",
+    "stack": "SAP_Z45",
+    "version": "1.3.0",
+    "endpoints": ["/api/disruptions/status"],
+    "isActive": false,
+    "configData": {
+      "settings": {
+        "retry": 5
+      }
+    }
+  },
+  {
+    "name": "LinkingService",
+    "group": "Linkings",
+    "stack": "CABLE",
+    "version": "2.0.0",
+    "endpoints": ["/api/linkings/connect"],
+    "isActive": true
+  },
+  {
+    "name": "SolsticeMain",
+    "group": "Solstice",
+    "stack": "SOLSTICE",
+    "version": "1.0.0",
+    "endpoints": ["/api/solstice/main"],
+    "isActive": true,
+    "configData": {
+      "settings": {
+        "timeout": 60000,
+        "retry": 1
+      }
+    }
+  }
+]
